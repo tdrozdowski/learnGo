@@ -14,6 +14,11 @@ func TestRepeat(t *testing.T) {
 	}
 }
 
+func TestSolve(t *testing.T) {
+	results := Solve()
+	fmt.Printf("goto https://multisoft.se/%s ", results)
+}
+
 func BenchmarkRepeat(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Repeat("a", 5)
